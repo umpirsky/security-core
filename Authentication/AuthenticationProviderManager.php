@@ -83,10 +83,6 @@ class AuthenticationProviderManager implements AuthenticationManagerInterface
                 if (null !== $result) {
                     break;
                 }
-            } catch (AccountStatusException $e) {
-                $lastException = $e;
-
-                break;
             } catch (AuthenticationException $e) {
                 $lastException = $e;
             }
